@@ -15,6 +15,19 @@ set(CMAKE_TOOLCHAIN_FILE
 
 set(WORKSPACE_ROOT_DIR ${CMAKE_CURRENT_SOURCE_DIR})
 
+if (TESTING)
+  add_subdirectory(${WORKSPACE_ROOT_DIR}/deps/googletest-1.8.0-hunter-p11)
+endif()
+add_subdirectory(${WORKSPACE_ROOT_DIR}/deps/fmt-6.1.2)
+add_subdirectory(${WORKSPACE_ROOT_DIR}/deps/GSL-2.0.0)
+add_subdirectory(${WORKSPACE_ROOT_DIR}/deps/c-ares-1.14.0)
+add_subdirectory(${WORKSPACE_ROOT_DIR}/deps/yaml-cpp-yaml-cpp-0.6.2)
+add_subdirectory(${WORKSPACE_ROOT_DIR}/deps/soralog-0.0.9)
+add_subdirectory(${WORKSPACE_ROOT_DIR}/deps/protobuf-3.11.2/cmake)
+add_subdirectory(${WORKSPACE_ROOT_DIR}/deps/hat-trie-0.6.0)
+add_subdirectory(${WORKSPACE_ROOT_DIR}/deps/di-1.1.0)
+add_subdirectory(${WORKSPACE_ROOT_DIR}/deps/sqlite_modern_cpp-3.2)
+
 include("cmake/Hunter/init.cmake")
 cmake_policy(SET CMP0048 NEW)
 

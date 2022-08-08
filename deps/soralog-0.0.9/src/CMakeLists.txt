@@ -3,11 +3,13 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+include_directories(${WORKSPACE_ROOT_DIR}/deps/GSL-2.0.0/include)
+
 include_directories(SYSTEM
     PUBLIC
-        $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/include>
+        $<BUILD_INTERFACE:${WORKSPACE_ROOT_DIR}/deps/soralog-0.0.9/include>
     PRIVATE
-        $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/src>
+        $<BUILD_INTERFACE:${WORKSPACE_ROOT_DIR}/deps/soralog-0.0.9/src>
     )
 
 set(INSTALL_TARGETS)
