@@ -3,6 +3,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+include_directories(${WORKSPACE_ROOT_DIR}/deps/GSL-2.0.0/include)
+
 add_subdirectory(basic)
 add_subdirectory(common)
 add_subdirectory(connection)
@@ -22,6 +24,7 @@ add_subdirectory(transport)
 add_library(p2p
     libp2p.cpp
     )
+
 target_link_libraries(p2p INTERFACE
     p2p_default_host
     p2p_default_network

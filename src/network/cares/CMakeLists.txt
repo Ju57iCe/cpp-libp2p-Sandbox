@@ -3,6 +3,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+include_directories(${WORKSPACE_ROOT_DIR}/deps/soralog-0.0.9/include)
+
 libp2p_add_library(p2p_cares
     cares.cpp
     )

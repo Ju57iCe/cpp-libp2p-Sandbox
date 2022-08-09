@@ -13,7 +13,9 @@ set(CMAKE_TOOLCHAIN_FILE
     "Default toolchain"
     )
 
-#include("cmake/Hunter/init.cmake")
+set(WORKSPACE_ROOT_DIR ${CMAKE_CURRENT_SOURCE_DIR})
+
+include("cmake/Hunter/init.cmake")
 cmake_policy(SET CMP0048 NEW)
 
 project(libp2p VERSION 0.0.1 LANGUAGES C CXX)

@@ -15,10 +15,10 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
-#hunter_add_package(Boost)
+hunter_add_package(Boost)
 find_package(Boost CONFIG REQUIRED)
 
-#hunter_add_package(Microsoft.GSL)
+hunter_add_package(Microsoft.GSL)
 find_package(Microsoft.GSL CONFIG REQUIRED)
 
 # look for libp2p in OS

@@ -3,6 +3,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+include_directories(${WORKSPACE_ROOT_DIR}/deps/GSL-2.0.0/include)
+
 add_subdirectory(host)
 
 addtest(all_muxers_acceptance_test
