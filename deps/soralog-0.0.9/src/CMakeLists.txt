@@ -20,7 +20,7 @@ endfunction()
 
 add_library(sink INTERFACE)
 target_link_libraries(sink INTERFACE
-    fmt::fmt
+    fmt
     )
 
 add_library(sink_to_nowhere

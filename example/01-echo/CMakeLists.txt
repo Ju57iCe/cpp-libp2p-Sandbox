@@ -6,8 +6,10 @@
 add_executable(libp2p_echo_server
     libp2p_echo_server.cpp
     )
+
+target_include_directories(libp2p_echo_server PRIVATE ${WORKSPACE_ROOT_DIR}/deps/di-1.1.0/include)
+
 target_link_libraries(libp2p_echo_server
-    Boost::Boost.DI
     p2p_basic_host
     p2p_default_network
     p2p_peer_repository
@@ -22,8 +24,9 @@ add_executable(libp2p_echo_client
     libp2p_echo_client.cpp
     )
 
+target_include_directories(libp2p_echo_client PRIVATE ${WORKSPACE_ROOT_DIR}/deps/di-1.1.0/include)
+
 target_link_libraries(libp2p_echo_client
-    Boost::Boost.DI
     p2p_basic_host
     p2p_default_network
     p2p_peer_repository
