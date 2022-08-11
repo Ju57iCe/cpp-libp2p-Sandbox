@@ -4,6 +4,7 @@
 #
 
 include_directories(${WORKSPACE_ROOT_DIR}/deps/soralog-0.0.9/include)
+include_directories(${WORKSPACE_ROOT_DIR}/deps/fmt-6.1.2/include)
 
 libp2p_add_library(p2p_cares
     cares.cpp
