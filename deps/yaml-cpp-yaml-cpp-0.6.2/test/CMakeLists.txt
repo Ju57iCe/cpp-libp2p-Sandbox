@@ -1,8 +1,8 @@
 set(gtest_force_shared_crt ${MSVC_SHARED_RT} CACHE BOOL
   "Use shared (DLL) run-time lib even when Google Test built as a static lib.")
-#add_subdirectory(gtest-1.8.0)
-include_directories(SYSTEM gtest-1.8.0/googlemock/include)
-include_directories(SYSTEM gtest-1.8.0/googletest/include)
+
+include_directories(${WORKSPACE_ROOT_DIR}/deps/googletest-1.8.0-hunter-p11/googlemock/include)
+include_directories(${WORKSPACE_ROOT_DIR}/deps/googletest-1.8.0-hunter-p11/googletest/include)
 
 if(WIN32 AND BUILD_SHARED_LIBS)
   add_definitions("-DGTEST_LINKED_AS_SHARED_LIBRARY")

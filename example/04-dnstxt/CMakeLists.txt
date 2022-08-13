@@ -8,6 +8,8 @@ add_executable(example_ares_resolver
     )
 
 target_include_directories(example_ares_resolver PRIVATE ${WORKSPACE_ROOT_DIR}/deps/di-1.1.0/include)
+target_include_directories(example_ares_resolver PRIVATE ${WORKSPACE_ROOT_DIR}/deps/soralog-0.0.9/include)
+target_include_directories(example_ares_resolver PRIVATE ${WORKSPACE_ROOT_DIR}/deps/yaml-cpp-yaml-cpp-0.6.2/include)
 
 target_link_libraries(example_ares_resolver
     p2p_basic_host

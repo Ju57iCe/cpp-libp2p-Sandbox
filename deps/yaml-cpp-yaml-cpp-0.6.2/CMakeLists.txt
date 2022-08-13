@@ -38,7 +38,7 @@ enable_testing()
 ### Project options
 ###
 ## Project stuff
-option(YAML_CPP_BUILD_TESTS "Enable testing" ON)
+option(YAML_CPP_BUILD_TESTS "Enable testing" OFF)
 option(YAML_CPP_BUILD_TOOLS "Enable parse tools" ON)
 option(YAML_CPP_BUILD_CONTRIB "Enable contrib stuff in library" ON)
 

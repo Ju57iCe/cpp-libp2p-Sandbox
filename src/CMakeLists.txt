@@ -4,6 +4,7 @@
 #
 
 include_directories(${WORKSPACE_ROOT_DIR}/deps/GSL-2.0.0/include)
+include_directories(${WORKSPACE_ROOT_DIR}/deps/soralog-0.0.9/include)
 
 add_subdirectory(basic)
 add_subdirectory(common)

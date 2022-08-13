@@ -8,6 +8,8 @@ add_executable(libp2p_echo_server
     )
 
 target_include_directories(libp2p_echo_server PRIVATE ${WORKSPACE_ROOT_DIR}/deps/di-1.1.0/include)
+target_include_directories(libp2p_echo_server PRIVATE ${WORKSPACE_ROOT_DIR}/deps/soralog-0.0.9/include)
+target_include_directories(libp2p_echo_server PRIVATE ${WORKSPACE_ROOT_DIR}/deps/yaml-cpp-yaml-cpp-0.6.2/include)
 
 target_link_libraries(libp2p_echo_server
     p2p_basic_host
@@ -25,6 +27,8 @@ add_executable(libp2p_echo_client
     )
 
 target_include_directories(libp2p_echo_client PRIVATE ${WORKSPACE_ROOT_DIR}/deps/di-1.1.0/include)
+target_include_directories(libp2p_echo_client PRIVATE ${WORKSPACE_ROOT_DIR}/deps/soralog-0.0.9/include)
+target_include_directories(libp2p_echo_client PRIVATE ${WORKSPACE_ROOT_DIR}/deps/yaml-cpp-yaml-cpp-0.6.2/include)
 
 target_link_libraries(libp2p_echo_client
     p2p_basic_host

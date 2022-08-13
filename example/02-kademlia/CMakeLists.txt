@@ -4,8 +4,12 @@
 #
 
 add_executable(rendezvous_chat
-    rendezvous_chat.cpp
-    )
+rendezvous_chat.cpp
+)
+
+target_include_directories(rendezvous_chat PRIVATE ${WORKSPACE_ROOT_DIR}/deps/di-1.1.0/include)
+target_include_directories(rendezvous_chat PRIVATE ${WORKSPACE_ROOT_DIR}/deps/soralog-0.0.9/include)
+target_include_directories(rendezvous_chat PRIVATE ${WORKSPACE_ROOT_DIR}/deps/yaml-cpp-yaml-cpp-0.6.2/include)
 
 target_link_libraries(rendezvous_chat
     p2p_basic_host
